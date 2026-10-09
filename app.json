@@ -1,13 +1,16 @@
 {
   "expo": {
-    "name": "CarkilaMobile",
-    "slug": "CarkilaMobile",
+    "name": "Carkila Operators",
+    "slug": "carkila-operators",
     "version": "1.0.0",
+    "scheme": "carkila",
     "orientation": "portrait",
     "icon": "./assets/icon.png",
     "userInterfaceStyle": "light",
     "ios": {
-      "supportsTablet": true
+      "supportsTablet": true,
+      "bundleIdentifier": "com.carkila.operators",
+      "buildNumber": "1"
     },
     "android": {
       "adaptiveIcon": {
@@ -17,9 +20,21 @@
         "monochromeImage": "./assets/android-icon-monochrome.png"
       },
       "predictiveBackGestureEnabled": false
+      ,"package": "com.carkila.operators",
+      "versionCode": 1,
+      "permissions": [],
+      "blockedPermissions": [
+        "android.permission.RECORD_AUDIO",
+        "android.permission.SYSTEM_ALERT_WINDOW"
+      ]
     },
     "web": {
-      "favicon": "./assets/favicon.png"
-    }
+      "favicon": "./assets/favicon.png",
+      "bundler": "metro"
+    },
+    "plugins": [
+      "expo-font",
+      ["expo-image-picker", { "photosPermission": "Allow Carkila Operators to select vehicle photos for your listings." }]
+    ]
   }
 }

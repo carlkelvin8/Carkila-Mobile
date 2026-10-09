@@ -1,0 +1,18 @@
+project_id = "carkila-mobile"
+
+[api]
+enabled = true
+schemas = ["public", "storage", "graphql_public"]
+extra_search_path = ["public", "extensions"]
+max_rows = 1000
+
+[db]
+major_version = 17
+
+[auth]
+enabled = true
+site_url = "carkila://auth/callback"
+additional_redirect_urls = ["exp://127.0.0.1:8081/--/auth/callback"]
+
+[storage]
+enabled = true

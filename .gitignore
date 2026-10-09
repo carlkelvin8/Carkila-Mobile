@@ -8,6 +8,8 @@ node_modules/
 dist/
 web-build/
 expo-env.d.ts
+/builds/
+/tmp/
 
 # Native
 .kotlin/
@@ -31,7 +33,12 @@ yarn-error.*
 *.pem
 
 # local env files
+.env
 .env*.local
+
+# Supabase local state
+supabase/.branches/
+supabase/.temp/
 
 # typescript
 *.tsbuildinfo
@@ -39,3 +46,6 @@ yarn-error.*
 # generated native folders
 /ios
 /android
+
+# Local Android release signing credentials (back these up securely)
+/signing/
